@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Calories Burnt Predictor",
-    page_icon="🔥",
+    page_icon="📊",
     layout="centered",
 )
 
@@ -130,8 +130,8 @@ st.markdown("""
         color: #4b5563;
         padding-top: 1rem;
         margin-top: 1.5rem;
-        white-space: nowrap;
         border-top: 1px solid #1f2937;
+        line-height: 1.9;
     }
 
     footer { visibility: hidden; }
@@ -197,8 +197,11 @@ with col1:
     )
 with col2:
     age    = st.slider("Age",    min_value=20,  max_value=79,  step=1,   format="%d yrs", key="age")
+    st.caption("Range: 20 – 79 yrs")
     height = st.slider("Height", min_value=123, max_value=222, step=1,   format="%d cm",  key="height")
+    st.caption("Range: 123 – 222 cm")
     weight = st.slider("Weight", min_value=36,  max_value=132, step=1,   format="%d kg",  key="weight")
+    st.caption("Range: 36 – 132 kg")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
@@ -207,11 +210,14 @@ st.markdown('<div class="card"><p class="card-label">Workout Stats</p>', unsafe_
 
 col3, col4, col5 = st.columns(3)
 with col3:
-    duration   = st.slider("Duration",   min_value=1,    max_value=30,  step=1,   format="%d min",  key="duration",   help="Training data covers sessions up to 30 minutes")
+    duration   = st.slider("Duration",   min_value=1,    max_value=30,  step=1,   format="%d min",  key="duration")
+    st.caption("Range: 1 – 30 min")
 with col4:
     heart_rate = st.slider("Heart Rate", min_value=67,   max_value=128, step=1,   format="%d bpm",  key="heart_rate")
+    st.caption("Range: 67 – 128 bpm")
 with col5:
     body_temp  = st.slider("Body Temp",  min_value=37.1, max_value=41.5, step=0.1, format="%.1f °C", key="body_temp")
+    st.caption("Range: 37.1 – 41.5 °C")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
@@ -338,7 +344,9 @@ if st.session_state.has_interacted:
 
 
 # ── Footer ────────────────────────────────────────────────────────────────────
-st.markdown(
-    '<p class="footer">This prediction is based on a machine learning model trained on 15,000 workout sessions · XGBoost · R² = 0.999 · MAE ≈ 1.4 kcal</p>',
-    unsafe_allow_html=True,
-)
+st.markdown("""
+<div class="footer">
+    <div>Model: XGBoost | R² = 0.9990 | MAE = 1.38 kcal</div>
+    <div>Trained on 15,000 samples across 2 genders</div>
+</div>
+""", unsafe_allow_html=True)
