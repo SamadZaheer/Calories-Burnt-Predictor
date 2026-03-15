@@ -130,6 +130,7 @@ st.markdown("""
         color: #4b5563;
         padding-top: 1rem;
         margin-top: 1.5rem;
+        white-space: nowrap;
         border-top: 1px solid #1f2937;
     }
 
