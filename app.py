@@ -197,11 +197,8 @@ with col1:
     )
 with col2:
     age    = st.slider("Age",    min_value=20,  max_value=79,  step=1,   format="%d yrs", key="age")
-    st.caption("Range: 20 – 79 yrs")
     height = st.slider("Height", min_value=123, max_value=222, step=1,   format="%d cm",  key="height")
-    st.caption("Range: 123 – 222 cm")
     weight = st.slider("Weight", min_value=36,  max_value=132, step=1,   format="%d kg",  key="weight")
-    st.caption("Range: 36 – 132 kg")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
@@ -211,13 +208,10 @@ st.markdown('<div class="card"><p class="card-label">Workout Stats</p>', unsafe_
 col3, col4, col5 = st.columns(3)
 with col3:
     duration   = st.slider("Duration",   min_value=1,    max_value=30,  step=1,   format="%d min",  key="duration")
-    st.caption("Range: 1 – 30 min")
 with col4:
     heart_rate = st.slider("Heart Rate", min_value=67,   max_value=128, step=1,   format="%d bpm",  key="heart_rate")
-    st.caption("Range: 67 – 128 bpm")
 with col5:
     body_temp  = st.slider("Body Temp",  min_value=37.1, max_value=41.5, step=0.1, format="%.1f °C", key="body_temp")
-    st.caption("Range: 37.1 – 41.5 °C")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
