@@ -176,12 +176,12 @@ def reset_all():
 
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.title("Calories Burnt Predictor")
-if st.session_state.has_interacted:
-    st.markdown("Move any slider to update the prediction instantly.")
-else:
-    st.markdown("Adjust your stats below — the prediction updates live as you move the sliders.")
-st.divider()
+st.markdown("""
+<div style="background-color: #0a192f; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1rem;">
+  <h1 style="color: white; font-weight: 700; margin: 0;">🏃 Calories Burnt Predictor</h1>
+  <p style="color: #a8b2c1; margin: 0.4rem 0 0 0; font-size: 1rem;">Move any slider to update the prediction instantly.</p>
+</div>
+""", unsafe_allow_html=True)
 
 
 # ── Inputs ────────────────────────────────────────────────────────────────────
