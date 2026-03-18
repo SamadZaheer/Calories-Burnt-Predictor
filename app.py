@@ -207,7 +207,7 @@ st.markdown('<div class="card"><p class="card-label">Workout Stats</p>', unsafe_
 
 col3, col4, col5 = st.columns(3)
 with col3:
-    duration   = st.slider("Duration",   min_value=1,    max_value=30,  step=1,   format="%d min",  key="duration")
+    duration   = st.slider("Duration",   min_value=1,    max_value=30,  step=1,   format="%d min",  key="duration", help="Capped at 30 min — reflects the training data range")
 with col4:
     heart_rate = st.slider("Heart Rate", min_value=67,   max_value=128, step=1,   format="%d bpm",  key="heart_rate")
 with col5:
@@ -342,5 +342,6 @@ st.markdown("""
 <div class="footer">
     <div>Model: XGBoost | R² = 0.9990 | MAE = 1.38 kcal</div>
     <div>Trained on 15,000 samples across 2 genders</div>
+    <div>Built by <a href="https://samadzaheer.github.io" target="_blank" style="color:#0d9488;text-decoration:none;">Samad Zaheer</a></div>
 </div>
 """, unsafe_allow_html=True)
