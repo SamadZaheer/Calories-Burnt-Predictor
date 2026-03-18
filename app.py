@@ -48,6 +48,7 @@ st.markdown("""
     .card {
         background-color: #0d1b2a;
         border: 1px solid #1e2d3d;
+        border-left: 4px solid #0d9488;
         border-radius: 14px;
         padding: 1.4rem 1.6rem 1rem;
         margin-bottom: 1.2rem;
@@ -63,8 +64,8 @@ st.markdown("""
 
     /* Result box */
     .result-box {
-        background: linear-gradient(145deg, #0f2744 0%, #1a3a5c 100%);
-        border: 1px solid #2563eb55;
+        background-color: #0d1b2a;
+        border: 1px solid #1e2d3d;
         border-radius: 16px;
         padding: 2.2rem 2rem 1.8rem;
         text-align: center;
@@ -73,7 +74,7 @@ st.markdown("""
     .cal-number {
         font-size: 5.5rem;
         font-weight: 800;
-        color: #60a5fa;
+        color: #0d9488;
         line-height: 1;
         letter-spacing: -2px;
     }
@@ -178,7 +179,7 @@ def reset_all():
 # ── Header ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div style="background-color: #0a192f; padding: 1.5rem 2rem; border-radius: 8px; margin-bottom: 1rem;">
-  <h1 style="color: white; font-weight: 700; margin: 0;">🏃 Calories Burnt Predictor</h1>
+  <p style="color: white; font-weight: 700; margin: 0; font-size: 2.2rem;">🏃 Calories Burnt Predictor</p>
   <p style="color: #a8b2c1; margin: 0.4rem 0 0 0; font-size: 1rem;">Move any slider to update the prediction instantly.</p>
 </div>
 """, unsafe_allow_html=True)
