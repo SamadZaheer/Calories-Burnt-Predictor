@@ -46,8 +46,8 @@ st.markdown("""
 
     /* Input group cards */
     .card {
-        background-color: #1e1e2e;
-        border: 1px solid #2e2e42;
+        background-color: #0d1b2a;
+        border: 1px solid #1e2d3d;
         border-radius: 14px;
         padding: 1.4rem 1.6rem 1rem;
         margin-bottom: 1.2rem;
@@ -57,7 +57,7 @@ st.markdown("""
         font-weight: 700;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #64ffda;
+        color: #ffffff;
         margin-bottom: 0.6rem;
     }
 
@@ -127,7 +127,7 @@ st.markdown("""
     .footer {
         text-align: center;
         font-size: 0.75rem;
-        color: #4b5563;
+        color: #64748b;
         padding-top: 1rem;
         margin-top: 1.5rem;
         border-top: 1px solid #1f2937;
