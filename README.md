@@ -11,7 +11,8 @@ A machine learning web app that predicts how many kilocalories you burn during a
 
 ## App Screenshot
 
-![App Screenshot](screenshot.png)
+![Input Panel](images/screenshot1.png)
+![Prediction Output](images/screenshot2.png)
 
 ---
 
@@ -33,6 +34,15 @@ A machine learning web app that predicts how many kilocalories you burn during a
 - **XGBoost** (Extreme Gradient Boosting) was trained on 15,000 labelled exercise records. It builds an ensemble of decision trees that progressively correct each other's errors, making it highly accurate on structured tabular data.
 - **Feature scaling** is applied via StandardScaler before training and at prediction time, ensuring all input features are on a comparable numerical scale regardless of their original units.
 - The model achieves **R² = 0.9990** (explains 99.9% of variance in calories burnt) and **MAE = 1.38 kcal** — an average error smaller than the calorie content of a single almond.
+
+---
+
+## Dataset
+
+- **Source:** Exercise and Fitness dataset from Kaggle
+- **Size:** 15,000 labelled workout records across 2 genders
+- **Features:** Gender, Age, Height, Weight, Duration, Heart Rate, Body Temperature, Calories
+- **Train/test split:** 13,500 training samples / 1,500 test samples
 
 ---
 
