@@ -136,6 +136,18 @@ st.markdown("""
     }
 
     footer { visibility: hidden; }
+
+    [data-baseweb="tooltip"] {
+        background-color: #112240 !important;
+        border: 1px solid #0d9488 !important;
+        border-radius: 6px !important;
+        color: #ffffff !important;
+        font-size: 0.85rem !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+    [data-baseweb="tooltip"] * {
+        color: #ffffff !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
