@@ -143,7 +143,8 @@ st.markdown("""
         border-radius: 6px !important;
         color: #ffffff !important;
         font-size: 0.85rem !important;
-        padding: 0.15rem 0.4rem !important;
+        padding: 0.1rem 0.3rem !important;
+        max-width: fit-content !important;
         min-width: 0 !important;
         margin: 0 !important;
     }
